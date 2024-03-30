@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e'rgo TaxkApp</title>
+    <!--=============================================CSS LINK============================================-->
+    <link rel="stylesheet" href="/Asset/main.css">
+    <!--===========================================Favicon================================================-->
+    <link rel="icon" type="image/x-icon" href="/Asset/images/Frame 161.png">
+</head>
+<body>
+
+    <!--===========================================Task Form Container=====================================-->
+    <section class="todoWrapper">
+        
+        <div class="taskFormContainer">
+
+           <div class="taskManagerTextImg">
+               <h1 class="taskManagerText">Manage Your Tasks</h1>
+               <img src="/Asset/images/Task182.png" alt="User">
+           </div>
+
+           <div class="formheadLine">
+               <h3>CREATE AN e'rgo LIST</h3>
+               <P>What are your task milestone ?</P>
+           </div>
+
+           <p class="detailBtn">Tap+ to add your tasks</p>
+    
+           <div class="formTaskField">
+                <h2>e'rgo To-Do List <img src="/Asset/images/Frame 161.png" alt="task list image"></h2>
+
+                <!--=============================================Form Field============================================-->
+                
+                <div class="formFilTask">
+                    <input 
+                    type="text" 
+                    id="taskInputBox" 
+                    placeholder="Add what's on your toDo">
+
+                    <button onclick="displayTask()"><img src="/Asset/images/Group 162.png" alt="addTask-Button"></button>
+                </div>
+
+                <!--=============================================Task List==============================================-->
+                <ul id="listOfTask">
+                    <!-- <li class="taskList">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>  -->
+                </ul>
+           </div>
+    
+        </div>
+
+    </section>
+
+   <!--========================footer==================================-->
+   <footer>
+    <h3 id="footerId">Developed By Kelvin Nkwor &copy; 2024</h3>
+    <!--===================Socials Logo============================================-->
+    <div class="social">
+        <a href=""><img src="/Asset/images/linkedin.png" alt="linkedin logo"></a>
+        <a href=""><img src="/Asset/images/github-logo_25231.png" alt="GitHub logo"></a>
+        <a href=""><img src="/Asset/images/twitter.png" alt="twitter logo"></a>
+    </div>
+   </footer>
+   
+   
+
+   <script src="/Asset/script.js"></script>
+</body>
+</html>

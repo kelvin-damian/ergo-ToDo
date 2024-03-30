@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*==================Style-Color===========================*/
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --Off-black: hsl(0, 0%, 8%);
+    --White: hsl(0, 0%, 100%);
+    --ash-white:#edeef0;
+}
+
+/*===================import font=========================*/
+@font-face {
+    font-family: pop;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+/*=========================body==========================*/
+body{ 
+    min-height: 100vh;
+    font-family: Pop;
+    width: 100%;
+    background: linear-gradient(135deg, #153677, #4e085f);  
+}
+
+
+
+/*=====================TaskManager HTML style==========================*/
+.todoWrapper{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.taskManagerTextImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/*====================================TaskManager image==================================*/
+.taskManagerTextImg img{
+    width: 10%;
+    border: solid 1px var(--White);
+    border-radius: 75px;
+    padding: 7px 10px;
+    background-color: var(--White);
+    margin-left: -1rem;   
+}
+
+.formTaskField h2 img{
+    width: 10%;
+    padding-left: 10px;
+}
+
+.formTaskField button img{
+    width: 35px;
+    background-color: var(--ash-white);
+    outline: none;
+    border-radius: 30px;
+}
+
+/*====================================taskFormContainer==================================*/
+
+.taskFormContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.formheadLine{
+    padding-top: 10px;
+}
+
+.formheadLine h3, p{
+    color: var(--White);    
+}
+
+.formheadLine h3{
+    margin-left: 15px;
+}
+
+.taskFormContainer .detailBtn{
+    padding-top: 10px;    
+}
+
+
+.taskManagerText{
+    color: var(--White);
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    border: solid 1px none;
+    border-radius: 75px;
+    padding: 13px 13px;
+    background-color: var(--Purple);
+}
+
+
+/*====================================TaskManager form==================================*/
+.formTaskField{
+    width: 100%;
+    background-color: var(--White);
+    max-width: 540px;
+    margin: 50px auto 20px;
+    padding: 20px 30px 70px;
+    border-radius: 10px;
+}
+
+.formTaskField h2{
+    color: #002765;
+    display: flex;
+    align-items: center;   
+}
+
+.formFilTask{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-top: 13px;
+}
+
+.formFilTask input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/*===========================TaskManager form Button==================================*/
+.formTaskField button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;   
+}
+
+/*=================================List of Task======================================*/
+.formTaskField ul li{
+    list-style: none;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    padding: 18px 8px 12px 40px;
+    position: relative;   
+}
+
+.formTaskField ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(./images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 2px;
+}
+
+/*=======================List of Task Radio Buttons======================================*/
+
+#listOfTask .taskList {
+    color: var(--Purple);
+    text-decoration: line-through;
+    
+}
+
+#listOfTask .taskList::before{
+    background-image: url(./images/circle-check-solid.svg);
+       
+}
+
+/*===============================deleteTask Image==================================*/
+ul li span{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    
+    text-align: center;
+    color: var(--Light-red);
+    border-radius: 50%;    
+}
+
+ul li span:hover{
+    background-color: var(--ash-white);
+}
+
+/*=================================Footer======================================*/
+footer{
+    padding-top: 4.7rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #footerId{
+    color: var(--White);
+    font-weight: 500;
+}
+
+footer .social img{
+    display: inline-flex;
+    column-gap: 0.7rem;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+footer .social img:hover{
+    background-color: var(--ash-white);
+
+}
+
+
+

@@ -106,11 +106,15 @@ body{
 /*====================================TaskManager form==================================*/
 .formTaskField{
     width: 100%;
+    
     background-color: var(--White);
     max-width: 540px;
     margin: 50px auto 20px;
     padding: 20px 30px 70px;
     border-radius: 10px;
+    max-height: 350px;
+    overflow-y: auto;
+    
 }
 
 .formTaskField h2{
@@ -225,6 +229,17 @@ footer .social img{
 footer .social img:hover{
     background-color: var(--ash-white);
 
+}
+
+@media only screen and (max-width: 767px) {
+    .formTaskField{
+        max-width: 90%;
+        
+    }
+
+    footer{
+        margin-top: -4rem;
+    }
 }
 
 
